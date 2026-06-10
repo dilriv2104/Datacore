@@ -25,10 +25,20 @@ body{
 }
 
 .logo{
-    padding:20px;
-    font-size:28px;
-    text-align:center;
-    border-bottom:1px solid rgba(255,255,255,.2);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 20px;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo img{
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    flex-shrink: 0;
 }
 
 .menu{
@@ -186,4 +196,65 @@ td{
     padding:6px 10px;
     border-radius:3px;
     cursor:pointer;
+}
+/* USUARIO */
+
+.user-box{
+    margin-top:auto;
+    padding:20px;
+    border-top:1px solid rgba(255,255,255,.2);
+}
+
+.usuario-info{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-bottom:15px;
+}
+
+.avatar{
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    background:white;
+    color:#4a4e6b;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:24px;
+    font-weight:bold;
+}
+
+.datos-usuario{
+    display:flex;
+    flex-direction:column;
+}
+
+.datos-usuario strong{
+    color:white;
+}
+
+.datos-usuario span{
+    color:#dcdcdc;
+    font-size:14px;
+}
+
+.btn-cerrar{
+    width:100%;
+    padding:10px;
+
+    border:none;
+    border-radius:5px;
+
+    background:#e74c3c;
+    color:white;
+
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.btn-cerrar:hover{
+    background:#c0392b;
 }

@@ -103,7 +103,7 @@ Estructura General del Proyecto
    ├── frontend/
    │   ├── css/
    │   ├── js/
-   │   ├── pages/
+   │   ├── img/
    │   └── index.html
    │
    ├── docs/

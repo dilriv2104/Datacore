@@ -11,9 +11,10 @@ body{
     justify-content:center;
     align-items:center;
 
-    background-image:url('../img/fondo.jpg');
+    background-image:url("../img/fondo.png");
     background-size:cover;
     background-position:center;
+    background-repeat:no-repeat;
 }
 
 .contenedor{
@@ -25,20 +26,25 @@ body{
 }
 
 .logo{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    gap:10px;
+    text-align:center;
 }
 
 .logo i{
     font-size:35px;
+    margin-bottom:5px;
 }
 
 .logo h1{
-    font-size:28px;
+    font-size:24px;
     font-weight:bold;
 }
+.subtitulo{
+    text-align:center;
+    color:#666;
+    font-size:12px;
+    margin-top:5px;
+}
+
 
 .subtitulo{
     text-align:center;
@@ -123,4 +129,15 @@ button:hover{
 .login a{
     color:#1e73ff;
     text-decoration:none;
+}
+
+.logo-img{
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 5px;
+}
+a{
+    color: #ececec;
 }

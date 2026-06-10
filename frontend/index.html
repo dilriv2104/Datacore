@@ -1,72 +1,71 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<link rel="stylesheet" href="css/style.css">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DataCore Login</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>DATACORE - Login</title>
 
     <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 
-    <div class="login-container">
+<div class="contenedor-login">
 
-        <div class="logo">
-            <i class="fas fa-database"></i>
-            <h1>DATACORE</h1>
+    <div class="logo">
+      <img src="img/logo.png" alt="Logo DataCore" class="logo-img">
+        <h1>DATACORE</h1>
+        <p class="subtitulo">Sistema de gestion de inventario</p>
+    </div>
+
+    <hr>
+
+    <form>
+
+        <label>Usuario</label>
+
+        <div class="input-box">
+            <i class="fa-regular fa-user"></i>
+            <input type="text" placeholder="Ingrese su usuario">
         </div>
 
-        <p class="subtitle">Sistema de gestión de inventario</p>
+        <label>Contraseña</label>
 
-        <hr>
+        <div class="input-box">
+            <i class="fa-solid fa-key"></i>
+            <input type="password" placeholder="Ingrese su contraseña">
+            <i class="fa-regular fa-eye"></i>
+        </div>
 
-        <form>
-
-            <label>Usuario</label>
-
-            <div class="input-group">
-                <i class="fa-regular fa-user"></i>
-                <input type="text" placeholder="Ingrese su usuario">
+        <div class="opciones">
+            <div>
+                <input type="checkbox">
+                Recordar
             </div>
 
-            <label>Contraseña</label>
+            <a href="#">¿Olvidaste tu contraseña?</a>
+        </div>
 
-            <div class="input-group">
-                <i class="fa-solid fa-key"></i>
-                <input type="password" placeholder="Ingrese su contraseña">
-                <i class="fa-regular fa-eye"></i>
-            </div>
+        <button>
+            <a href="dashboard.html">inicia sesión</a>
+        </button>
 
-            <div class="options">
-                <div class="remember">
-                    <input type="checkbox">
-                    <span>Recordar</span>
-                </div>
+        <div class="registro">
+            <a href="login.html">registrate</a>
+        </div>
 
-                <a href="#">¿Olvidaste tu contraseña?</a>
-            </div>
+    </form>
 
-            <button type="submit">
-                <a href="dashboard.html">Inicio sesión</a>
-            </button>
-
-            <div class="register">
-                <a href="login.html">Regístrate</a>
-            </div>
-
-        </form>
-
-        <hr>
-
-        <footer>
-            <i class="fa-solid fa-lock"></i>
-            <i class="fa-regular fa-copyright"></i>
-            2026 DataCore • Todos los derechos reservados
-        </footer>
-
+    <div class="footer">
+        🔒 © 2026 DataCore • Todos los derechos reservados
     </div>
+
+</div>
 
 </body>
 </html>
