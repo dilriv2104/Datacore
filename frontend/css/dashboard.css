@@ -1,0 +1,189 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', sans-serif;
+}
+
+body{
+    background:#f0f0f0;
+}
+
+.container{
+    display:flex;
+    min-height:100vh;
+}
+
+/* SIDEBAR */
+
+.sidebar{
+    width:250px;
+    background:#4a4e6b;
+    color:white;
+    display:flex;
+    flex-direction:column;
+}
+
+.logo{
+    padding:20px;
+    font-size:28px;
+    text-align:center;
+    border-bottom:1px solid rgba(255,255,255,.2);
+}
+
+.menu{
+    list-style:none;
+}
+
+.menu li{
+    padding:15px 20px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.menu li:hover{
+    background:#5d63a0;
+}
+
+.menu li.active{
+    background:#5d74e8;
+}
+
+.menu li i{
+    margin-right:10px;
+}
+
+.user-box{
+    margin-top:auto;
+    padding:20px;
+    border-top:1px solid rgba(255,255,255,.2);
+    text-align:center;
+}
+
+/* CONTENIDO */
+
+.main{
+    flex:1;
+    padding:25px;
+}
+
+.topbar{
+    display:flex;
+    justify-content:flex-end;
+    margin-bottom:25px;
+}
+
+.btn-producto{
+    background:#67c96b;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:4px;
+    cursor:pointer;
+}
+
+.btn-producto:hover{
+    background:#4eb453;
+}
+
+.titulo{
+    font-size:42px;
+    margin-bottom:25px;
+    font-family:Georgia, serif;
+}
+
+/* TARJETAS */
+
+.cards{
+    display:flex;
+    gap:30px;
+    margin-bottom:30px;
+}
+
+.card{
+    width:180px;
+    padding:20px;
+    border-radius:4px;
+    color:white;
+}
+
+.card h4{
+    font-size:12px;
+    margin-bottom:10px;
+    text-transform:uppercase;
+}
+
+.card span{
+    font-size:24px;
+    font-weight:bold;
+}
+
+.azul{
+    background:#3da5f4;
+}
+
+.verde{
+    background:#5ac96d;
+}
+
+.rojo{
+    background:#f24d23;
+}
+
+.morado{
+    background:#7f4df2;
+}
+
+/* TABLA */
+
+.tabla-contenedor{
+    background:white;
+    border:1px solid #aaa;
+    border-radius:4px;
+    padding:15px;
+}
+
+.tabla-header{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:15px;
+}
+
+.buscar{
+    padding:8px;
+    width:220px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+th{
+    background:#f2f2f2;
+    padding:12px;
+    text-align:left;
+}
+
+td{
+    padding:12px;
+    border-top:1px solid #ddd;
+}
+
+.btn-editar{
+    background:#59c85e;
+    color:white;
+    border:none;
+    padding:6px 10px;
+    border-radius:3px;
+    cursor:pointer;
+}
+
+.btn-eliminar{
+    background:#f04a2a;
+    color:white;
+    border:none;
+    padding:6px 10px;
+    border-radius:3px;
+    cursor:pointer;
+}

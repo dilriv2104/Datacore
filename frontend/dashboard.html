@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataCore - Dashboard</title>
+
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- MENÚ LATERAL -->
+    <aside class="sidebar">
+
+        <div class="logo">
+            DATACORE
+        </div>
+
+        <ul class="menu">
+            <li class="active">🏠 Inicio</li>
+            <li>📦 Inventario</li>
+            <li>💰 Ventas</li>
+            <li>🛒 Categorías</li>
+            <li>📊 Reportes</li>
+            <li>⚙️ Configuración</li>
+        </ul>
+
+        <div class="user-box">
+
+            <div class="usuario-info">
+
+            <div class="avatar">
+            👤
+            </div>
+
+            <div class="datos-usuario">
+            <strong>Pepito Pérez</strong>
+            <span>Administrador</span>
+        </div>
+
+            </div>
+
+        <div class="index">
+                <a href="index.html">cerrar cesion</a>
+            </div>
+    </div>
+
+        </aside>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="main">
+
+        <div class="topbar">
+            <button class="btn-producto">
+                + Crear producto
+            </button>
+        </div>
+
+        <h1 class="titulo">
+            Bienvenido de nuevo
+        </h1>
+
+        <!-- TARJETAS -->
+        <div class="cards">
+
+            <div class="card azul">
+                <h4>Total de productos</h4>
+                <span>65</span>
+            </div>
+
+            <div class="card verde">
+                <h4>Disponibles</h4>
+                <span>58</span>
+            </div>
+
+            <div class="card rojo">
+                <h4>Poco inventario</h4>
+                <span>3</span>
+            </div>
+
+            <div class="card morado">
+                <h4>Reportes</h4>
+                <span>12</span>
+            </div>
+
+        </div>
+
+        <!-- TABLA -->
+        <div class="tabla-contenedor">
+
+            <div class="tabla-header">
+                <h2>Lista de productos</h2>
+                <input class="buscar" type="text" placeholder="Buscar producto...">
+            </div>
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Categoría</th>
+                        <th>Stock</th>
+                        <th>Precio</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>Mouse Gamer RGB</td>
+                        <td>Periféricos</td>
+                        <td>25</td>
+                        <td>$80.000</td>
+                        <td>
+                            <button class="btn-editar">Editar</button>
+                            <button class="btn-eliminar">Eliminar</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Teclado Mecánico Red Switch</td>
+                        <td>Periféricos</td>
+                        <td>15</td>
+                        <td>$150.000</td>
+                        <td>
+                            <button class="btn-editar">Editar</button>
+                            <button class="btn-eliminar">Eliminar</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Monitor Samsung 24"</td>
+                        <td>Monitores</td>
+                        <td>8</td>
+                        <td>$650.000</td>
+                        <td>
+                            <button class="btn-editar">Editar</button>
+                            <button class="btn-eliminar">Eliminar</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Laptop Lenovo IdeaPad</td>
+                        <td>Computadores</td>
+                        <td>5</td>
+                        <td>$2.800.000</td>
+                        <td>
+                            <button class="btn-editar">Editar</button>
+                            <button class="btn-eliminar">Eliminar</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Disco SSD Kingston 1TB</td>
+                        <td>Almacenamiento</td>
+                        <td>12</td>
+                        <td>$350.000</td>
+                        <td>
+                            <button class="btn-editar">Editar</button>
+                            <button class="btn-eliminar">Eliminar</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Memoria RAM 16GB DDR4</td>
+                        <td>Componentes</td>
+                        <td>10</td>
+                        <td>$220.000</td>
+                        <td>
+                            <button class="btn-editar">Editar</button>
+                            <button class="btn-eliminar">Eliminar</button>
+                        </td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </main>
+
+</div>
+
+</body>
+</html>
