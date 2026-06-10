@@ -1,25 +1,72 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DataCore Login</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 
-<h2>Iniciar Sesión</h2>
+    <div class="login-container">
 
-<form id="loginForm">
-    <input type="email" id="correo" placeholder="Correo" required>
-    <br><br>
+        <div class="logo">
+            <i class="fas fa-database"></i>
+            <h1>DATACORE</h1>
+        </div>
 
-    <input type="password" id="password" placeholder="Contraseña" required>
-    <br><br>
+        <p class="subtitle">Sistema de gestión de inventario</p>
 
-    <button type="submit">Ingresar</button>
-</form>
+        <hr>
 
-<p id="mensaje"></p>
+        <form>
 
-<script src="js/login.js"></script>
+            <label>Usuario</label>
+
+            <div class="input-group">
+                <i class="fa-regular fa-user"></i>
+                <input type="text" placeholder="Ingrese su usuario">
+            </div>
+
+            <label>Contraseña</label>
+
+            <div class="input-group">
+                <i class="fa-solid fa-key"></i>
+                <input type="password" placeholder="Ingrese su contraseña">
+                <i class="fa-regular fa-eye"></i>
+            </div>
+
+            <div class="options">
+                <div class="remember">
+                    <input type="checkbox">
+                    <span>Recordar</span>
+                </div>
+
+                <a href="#">¿Olvidaste tu contraseña?</a>
+            </div>
+
+            <button type="submit">
+                Inicia sesión
+            </button>
+
+            <div class="register">
+                <a href="#">Regístrate</a>
+            </div>
+
+        </form>
+
+        <hr>
+
+        <footer>
+            <i class="fa-solid fa-lock"></i>
+            <i class="fa-regular fa-copyright"></i>
+            2026 DataCore • Todos los derechos reservados
+        </footer>
+
+    </div>
 
 </body>
 </html>
