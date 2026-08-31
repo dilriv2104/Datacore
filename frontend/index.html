@@ -25,20 +25,20 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 
     <hr>
 
-    <form>
+    <form onsubmit="iniciarSesion(event)">
 
-        <label>Usuario</label>
+       <label>Usuario</label>
 
         <div class="input-box">
             <i class="fa-regular fa-user"></i>
-            <input type="text" placeholder="Ingrese su usuario">
+                <input type="text" id="usuario" placeholder="Ingrese su usuario">
         </div>
 
         <label>Contraseña</label>
 
         <div class="input-box">
             <i class="fa-solid fa-key"></i>
-            <input type="password" placeholder="Ingrese su contraseña">
+                <input type="password" id="password" placeholder="Ingrese su contraseña">
             <i class="fa-regular fa-eye"></i>
         </div>
 
@@ -51,8 +51,8 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
             <a href="#">¿Olvidaste tu contraseña?</a>
         </div>
 
-        <button>
-            <a href="dashboard.html">inicia sesión</a>
+        <button onclick="iniciarSesion()">
+            Iniciar Sesión
         </button>
 
         <div class="registro">
@@ -66,6 +66,8 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     </div>
 
 </div>
+<script src="js/index.js"></script>
 
+    
 </body>
 </html>

@@ -37,14 +37,14 @@
 </div>
 
         <div class="datos-usuario">
-            <strong>Pepito Pérez</strong>
+            <strong>Dilan</strong>
             <span>Administrador</span>
         </div>
 
     </div>
 
-    <button class="btn-cerrar">
-        <a href="index.html">cerrar sesión</a>
+    <button class="btn-cerrar" onclick="cerrarSesion()">
+        Cerrar sesión
     </button>
 
 </div>
@@ -55,7 +55,7 @@
     <main class="main">
 
         <div class="topbar">
-            <button class="btn-producto">
+           <button class="btn-producto" onclick="crearProducto()">
                 + Crear producto
             </button>
         </div>
@@ -105,7 +105,9 @@
                         <th>Categoría</th>
                         <th>Stock</th>
                         <th>Precio</th>
+                        <th>Fecha de vencimiento</th>
                         <th>Acciones</th>
+                        <td></td>
                     </tr>
                 </thead>
 
@@ -116,9 +118,15 @@
                         <td>Periféricos</td>
                         <td>25</td>
                         <td>$80.000</td>
+                        <td></td>
                         <td>
-                            <button class="btn-editar">Editar</button>
-                            <button class="btn-eliminar">Eliminar</button>
+                            <button class="btn-editar" onclick="editarProducto(this)">
+                                    Editar
+                            </button>
+
+                            <button class="btn-eliminar" onclick="eliminarProducto(this)">
+                                    Eliminar
+                            </button>
                         </td>
                     </tr>
 
@@ -127,9 +135,15 @@
                         <td>Periféricos</td>
                         <td>15</td>
                         <td>$150.000</td>
+                        <td></td>
                         <td>
-                            <button class="btn-editar">Editar</button>
-                            <button class="btn-eliminar">Eliminar</button>
+                            <button class="btn-editar" onclick="editarProducto(this)">
+                                    Editar
+                            </button>
+
+                            <button class="btn-eliminar" onclick="eliminarProducto(this)">
+                                    Eliminar
+                            </button>
                         </td>
                     </tr>
 
@@ -138,9 +152,15 @@
                         <td>Monitores</td>
                         <td>8</td>
                         <td>$650.000</td>
+                        <td></td>
                         <td>
-                            <button class="btn-editar">Editar</button>
-                            <button class="btn-eliminar">Eliminar</button>
+                            <button class="btn-editar" onclick="editarProducto(this)">
+                                    Editar
+                            </button>
+
+                            <button class="btn-eliminar" onclick="eliminarProducto(this)">
+                                    Eliminar
+                            </button>
                         </td>
                     </tr>
 
@@ -149,9 +169,15 @@
                         <td>Computadores</td>
                         <td>5</td>
                         <td>$2.800.000</td>
+                        <td></td>
                         <td>
-                            <button class="btn-editar">Editar</button>
-                            <button class="btn-eliminar">Eliminar</button>
+                            <button class="btn-editar" onclick="editarProducto(this)">
+                                    Editar
+                            </button>
+
+                            <button class="btn-eliminar" onclick="eliminarProducto(this)">
+                                    Eliminar
+                            </button>
                         </td>
                     </tr>
 
@@ -160,9 +186,15 @@
                         <td>Almacenamiento</td>
                         <td>12</td>
                         <td>$350.000</td>
+                        <td></td>
                         <td>
-                            <button class="btn-editar">Editar</button>
-                            <button class="btn-eliminar">Eliminar</button>
+                            <button class="btn-editar" onclick="editarProducto(this)">
+                                    Editar
+                            </button>
+
+                            <button class="btn-eliminar" onclick="eliminarProducto(this)">
+                                    Eliminar
+                            </button>
                         </td>
                     </tr>
 
@@ -171,9 +203,15 @@
                         <td>Componentes</td>
                         <td>10</td>
                         <td>$220.000</td>
+                        <td></td>
                         <td>
-                            <button class="btn-editar">Editar</button>
-                            <button class="btn-eliminar">Eliminar</button>
+                            <button class="btn-editar" onclick="editarProducto(this)">
+                                    Editar
+                            </button>
+
+                            <button class="btn-eliminar" onclick="eliminarProducto(this)">
+                                    Eliminar
+                            </button>
                         </td>
                     </tr>
 
@@ -186,6 +224,31 @@
     </main>
 
 </div>
+<!-- MODAL PRODUCTO -->
+<div id="modalProducto" class="modal">
 
+    <div class="modal-content">
+
+        <h2 id="tituloModal">Crear Producto</h2>
+
+            <input type="text" id="nombre" placeholder="Nombre del producto" required>
+
+            <input type="text" id="categoria" placeholder="Categoría" required>
+
+            <input type="number" id="stock" placeholder="Stock" required>
+
+            <input type="number" id="precio" placeholder="Precio" required>
+
+            <input type="date" id="fechaVencimiento">
+
+        <div class="modal-botones">
+            <button onclick="guardarProducto()">Guardar</button>
+            <button onclick="cerrarModal()">Cancelar</button>
+        </div>
+
+    </div>
+
+</div>
+<script src="js/dashboard.js"></script>
 </body>
 </html>
